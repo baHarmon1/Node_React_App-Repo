@@ -3,6 +3,17 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const routesHandler = require('./routes/handler.js');
 
+const csv = require('csv-parser');
+const fs = require('fs');
+const results = [];
+
+fs.createReadStream('emails3a89.CSV')
+.pipe(csv({}))
+.on('data', (data) => results.push(data))
+.on('end', () => {
+    console.log(results)
+})
+
 const app = express()
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json()) // convert to json format
