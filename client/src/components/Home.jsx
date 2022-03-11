@@ -9,13 +9,13 @@ function Home() {
           <Form.Label>Search database for email:</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
         </Form.Group>
-        <Button variant="success" type="submit">
+        <Button variant="outline-success" type="submit">
           Submit
         </Button>
       </Form>
-      <button type="btn" className="btn btn-success">
+      <Button variant="warning" type="submit">
         Find duplicate emails
-      </button>
+      </Button>
     </div>
   );
 }
