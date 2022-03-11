@@ -11,7 +11,6 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <p>Lipsey's LLC Email tracker</p>
           {/* Adding a Home component so that the application is organized for ease of use in future changes */}
           <Routes>
           <Route exact path="/" element={<Home/>}/>

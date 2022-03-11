@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div>
+      <p>Lipsey's LLC Email tracker</p>
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Search database for email:</Form.Label>
