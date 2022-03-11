@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/search-email', (req, res) => {
+router.get('/search-results', (req, res) => {
     const str = [{
         "test": "testing",
     }]
