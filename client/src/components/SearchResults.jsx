@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react'
+import {Button} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 function SearchResults() {
     useEffect(() => {
@@ -15,6 +17,11 @@ function SearchResults() {
     
     return ( 
         <div>
+            <Link to="/">
+                <Button variant='success'>
+                    Back to home
+                </Button>
+            </Link>
             {
                 items.map(item => (
                     <div>
