@@ -16,9 +16,11 @@ function Home() {
           </Button>
         </Link>
       </Form>
-      <Button variant="warning" type="submit">
-        Find duplicate emails
-      </Button>
+      <Link to="/duplicate-results">
+        <Button variant="warning" type="submit">
+          Find duplicate emails
+        </Button>
+      </Link>
     </div>
   );
 }
