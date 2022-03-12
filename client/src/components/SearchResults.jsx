@@ -50,28 +50,3 @@ function SearchResults() {
 }
 
 export default SearchResults;
-
-
-  //   function handleClick(e) {
-  //     e.preventDefault();
-  //     setQuery(e.target.value)
-  //     console.log(search);
-  //   }
-
-  //   const foundEmail = items.filter((e) => {
-  //     if (e.EMAIL == search) {
-  //       console.log("true");
-  //       return true;
-  //     } else {
-  //       console.log("false");
-  //       return false;
-  //     }
-  //   });
-
-  //   const displayFoundEmail = () => {
-  //       if (foundEmail == true) {
-  //           return ("email exists.")
-  //       } else {
-  //         return ("email does not exist.")
-  //       }
-  //   }
