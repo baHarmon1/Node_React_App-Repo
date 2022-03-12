@@ -30,7 +30,7 @@ function DuplicateResults() {
       </Link>
       {duplicates.map((duplicate) => (
         <div>
-          <p>{duplicate}</p>
+          <li>{duplicate}</li>
         </div>
       ))}
     </div>
