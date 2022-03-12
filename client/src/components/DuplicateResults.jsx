@@ -4,15 +4,15 @@ import {Link} from 'react-router-dom'
 
 function DuplicateResults() {
     useEffect(() => {
-      fetchEmails()
+      fetchItems()
     }, [])
 
-    const [emails, setEmails] = useState([])
+    const [items, setItems] = useState([])
 
-    const fetchEmails = async() => {
-        const data = await fetch('/duplicate-results')
-        const emails = await data.json()
-        setEmails(emails)
+    const fetchItems = async() => {
+        const data = await fetch('/search-results')
+        const items = await data.json()
+        setItems(items)
     }
     
     return ( 
@@ -23,9 +23,9 @@ function DuplicateResults() {
                 </Button>
             </Link>
             {
-                emails.map(email => (
+                items.map(item => (
                     <div>
-                    <p>{email.test}</p>
+                    <p>{item.EMAIL}</p>
                     </div>
                 ))
             }

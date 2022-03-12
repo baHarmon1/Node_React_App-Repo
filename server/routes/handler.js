@@ -1,18 +1,23 @@
 const express = require('express')
+const app = express()
 const router = express.Router()
+const index = require('../index.js')
+const csv = require('csv-parser');
+const fs = require('fs');
+const results = [];
+
+fs.createReadStream('emails3a89.CSV')
+.pipe(csv({}))
+.on('data', (data) => results.push(data))
+.on('end', () => {
+    })
 
 router.get('/search-results', (req, res) => {
-    const str = [{
-        "test": "testing email results",
-    }]
-    res.end(JSON.stringify(str))
+    res.send(results)
 })
 
 router.get('/duplicate-results', (req, res) => {
-    const str = [{
-        "test": "testing duplicates",
-    }]
-    res.end(JSON.stringify(str))
+    res.send(results)
 })
 
 module.exports = router;

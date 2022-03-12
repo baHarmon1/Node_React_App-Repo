@@ -25,7 +25,7 @@ function SearchResults() {
             {
                 items.map(item => (
                     <div>
-                    <p>{item.test}</p>
+                    <p>{item.EMAIL}</p>
                     </div>
                 ))
             }
