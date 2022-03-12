@@ -25,14 +25,15 @@ function DuplicateResults() {
 
   return (
     <div>
-      <Link to="/">
-        <Button variant="success">Back to home</Button>
-      </Link>
+      <p>Here is a list of duplicate emails:</p>
       {duplicates.map((duplicate) => (
         <div>
           <li>{duplicate}</li>
         </div>
       ))}
+      <Link to="/">
+        <Button variant="success">Back to home</Button>
+      </Link>
     </div>
   );
 }
