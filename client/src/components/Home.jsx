@@ -6,17 +6,11 @@ function Home() {
   return (
     <div>
       <p>Lipsey's LLC Email Tracker</p>
-      <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Search database for email:</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-        </Form.Group>
-        <Link to="/search-results">
+      <Link to="/search-results">
           <Button variant="outline-success" type="submit">
-            Submit
+            Search for an email
           </Button>
-        </Link>
-      </Form>
+      </Link>
       <Link to="/duplicate-results">
         <Button variant="warning" type="submit">
           Find duplicate emails
