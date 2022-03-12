@@ -10,15 +10,10 @@ function DuplicateResults() {
     const [emails, setEmails] = useState([])
 
     const fetchEmails = async() => {
-        const data = await fetch('http://localhost:4000/')
+        const data = await fetch('/duplicate-results')
         const emails = await data.json()
         setEmails(emails)
     }
-    // const fetchEmails = async() => {
-    //     const data = await fetch('/duplicate-results')
-    //     const emails = await data.json()
-    //     setEmails(emails)
-    // }
     
     return ( 
         <div>

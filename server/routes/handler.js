@@ -8,17 +8,11 @@ router.get('/search-results', (req, res) => {
     res.end(JSON.stringify(str))
 })
 
-router.get('duplicate-results', (req, res) => {
+router.get('/duplicate-results', (req, res) => {
     const str = [{
-        // How do I get the result to show here
+        "test": "testing duplicates",
     }]
     res.end(JSON.stringify(str))
 })
-// router.get('/duplicate-results', (req, res) => {
-//     const str = [{
-//         "test": "testing duplicates",
-//     }]
-//     res.end(JSON.stringify(str))
-// })
 
 module.exports = router;
