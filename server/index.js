@@ -17,9 +17,7 @@ fs.createReadStream('emails3a89.CSV')
 .pipe(csv({}))
 .on('data', (data) => results.push(data))
 .on('end', () => {
-    
-    console.log(results)
-})
+    })
 
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json()) // convert to json format
